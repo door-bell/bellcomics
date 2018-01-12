@@ -50,5 +50,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #user defined
+#style/bootstrap
 gem 'jquery-rails', '~> 4.3.1'
 gem 'bootstrap', '~> 4.0.0.beta'
+#login
+gem 'clearance'
