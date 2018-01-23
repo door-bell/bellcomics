@@ -4,7 +4,7 @@
 
     <%= form.label :password, class: 'sr-only' %>
     <%= form.password_field :password, class:'form-control', placeholder: 'Password' %>
-
+    <%= recaptcha_tags %>
     <%= form.submit class: 'btn btn-lg btn-primary btn-block' %>
 
     <% if Clearance.configuration.allow_sign_up? %>

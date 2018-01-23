@@ -60,5 +60,5 @@ gem 'jquery-rails', '~> 4.3.1'
 gem 'bootstrap', '~> 4.0.0.beta'
 #login
 gem 'clearance'
-gem 'recaptcha'
+gem 'recaptcha', :require => 'recaptcha/rails'
 gem 'rails_admin'
