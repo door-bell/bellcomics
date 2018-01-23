@@ -56,3 +56,4 @@ gem 'bootstrap', '~> 4.0.0.beta'
 #login
 gem 'clearance'
 gem 'recaptcha'
+gem 'rails_admin'

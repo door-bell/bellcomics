@@ -11,14 +11,12 @@
 <body>
   <header>
     <div class="main-bar">
-      <button type="button" class="btn btn-outline-secondary">
-        <% if signed_in? %>
-          Signed in as: <%= current_user.email %>
-          <%= button_to 'Sign out', sign_out_path, method: :delete %>
-          <% else %>
-          <%= link_to 'Sign in', sign_in_path %>
-          <% end %>
-        </button>
+      <% if signed_in? %>
+        Signed in as: <%= current_user.email %>
+        <%= button_to 'Sign out', sign_out_path, method: :delete %>
+      <% else %>
+        <%= link_to 'Sign in', sign_in_path %>
+      <% end %>
     </div>
     <div id="flash" class="container">
       <% flash.each do |key, value| %>
