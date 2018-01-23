@@ -52,3 +52,7 @@
 .notice {
   @extend .alert-danger;
 }
+.main-bar {
+  float: right;
+  padding: 1rem;
+}
