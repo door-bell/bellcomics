@@ -11,12 +11,12 @@
 
 <body>
   <header>
-    <div class="container main-bar">
+    <div class="main-bar">
       <% if signed_in? %>
         <%= current_user.email %>
         <%= link_to 'Sign out', sign_out_path, method: :delete %>
         <% if current_user.admin %>
-          <%= link_to ' - Admin', '/admin' %>
+           - <%= link_to 'Admin', '/admin' %>
         <% end %>
       <% else %>
         <%= link_to 'Sign in', sign_in_path %>
@@ -29,7 +29,7 @@
     </div>
   </header>
 
-  <div class="container">
+  <div class="container-fluid">
     <%= yield %>
   </div>
 </body>
