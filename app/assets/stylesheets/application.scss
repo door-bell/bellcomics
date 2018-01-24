@@ -52,6 +52,9 @@
 .notice {
   @extend .alert-danger;
 }
+.recaptcha_error {
+  @extend .alert-warning;
+}
 .main-bar {
   float: right;
   padding: 1rem;
