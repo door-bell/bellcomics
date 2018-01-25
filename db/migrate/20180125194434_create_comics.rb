@@ -7,4 +7,6 @@ class CreateComics < ActiveRecord::Migration[5.1]
       t.timestamps
     end
   end
+
+  add_index :comics, :created_at
 end
