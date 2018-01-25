@@ -64,3 +64,5 @@ gem 'bootstrap', '~> 4.0.0.beta'
 gem 'clearance'
 gem 'recaptcha', :require => 'recaptcha/rails'
 gem 'rails_admin'
+# comics
+gem "paperclip", "~> 5.0.0"
