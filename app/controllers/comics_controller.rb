@@ -1,6 +1,6 @@
 class ComicsController < ApplicationController
   before_action :set_comic, only: [:show, :edit, :update, :destroy]
-
+  before_action :is_admin, only: [:edit, :update, :destroy, :new]
   # GET /comics
   # GET /comics.json
   def index
@@ -70,5 +70,12 @@ class ComicsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def comic_params
       params.require(:comic).permit(:string, :string)
+    end
+
+    def is_admin
+      unless current_user && current_user.admin
+        flash[:error] = "You must be logged in to access this section"
+        redirect_to "/"
+      end
     end
 end
