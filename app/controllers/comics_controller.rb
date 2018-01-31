@@ -10,6 +10,7 @@ class ComicsController < ApplicationController
   # GET /comics/1
   # GET /comics/1.json
   def show
+    @comic = Comic.find(params[:id])
   end
 
   # GET /comics/new
@@ -74,7 +75,7 @@ class ComicsController < ApplicationController
 
     def is_admin
       unless current_user && current_user.admin
-        flash[:error] = "You must be logged in to access this section"
+        flash["alert-danger"] = "You are not permitted to enter."
         redirect_to "/"
       end
     end

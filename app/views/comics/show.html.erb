@@ -1,14 +1,34 @@
 <p id="notice"><%= notice %></p>
+<!-- Begin page content -->
 
-<p>
-  <strong>String:</strong>
-  <%= @comic.string %>
-</p>
 
-<p>
-  <strong>String:</strong>
-  <%= @comic.string %>
-</p>
+<main role="main" class="container">
+   <div class="mt-1">
+     <h1 class="spaced" style="font-family: Roboto">Bell Comics</h1>
+   </div>
+   <p class="lead">My life in comics.</p>
 
-<%= link_to 'Edit', edit_comic_path(@comic) %> |
-<%= link_to 'Back', comics_path %>
+   <div class="text-center">
+      <!--<img src="banner.jpg" class="rounded" alt="Bell Comics" />-->
+   </div>
+
+   <div>
+     <strong><%= @comic.title %></strong>
+   </div>
+   <div class="text-center main-comic">
+     <!--image_tag(@comic.image.url, :alt = @comic.alt) -->
+   </div>
+   <% if current_user && current_user.admin %>
+     <%= link_to 'Edit', edit_comic_path(@comic) %> | <%= link_to 'Delete' destroy_comic_path(@comic) %>
+   <% end %>
+
+</main>
+
+
+
+
+<footer class="footer">
+   <div class="container text-center">
+     <a href="/about" style="spaced">About me</a> • <a href="mailto:busterbrownsgirl@gmail.com">Contact Me</a>
+   </div>
+</footer>

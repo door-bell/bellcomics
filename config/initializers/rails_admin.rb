@@ -28,9 +28,9 @@ RailsAdmin.config do |config|
 
   config.authorize_with do
     unless current_user && current_user.admin
+      flash[:notice] = "You are not permitted to view this page"
       redirect_to(
-        main_app.root_path,
-        alert: "You are not permitted to view this page"
+        main_app.root_path
       )
     end
   end
