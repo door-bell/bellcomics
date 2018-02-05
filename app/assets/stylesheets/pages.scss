@@ -1,28 +1,56 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
+.gradient-body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
+    background: linear-gradient(98deg, #00b93b, #00b5ff);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
 }
 p {font-size: 16px;}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 20%}
+    50%{background-position:100% 81%}
+    100%{background-position:0% 20%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 20%}
+    50%{background-position:100% 81%}
+    100%{background-position:0% 20%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 20%}
+    50%{background-position:100% 81%}
+    100%{background-position:0% 20%}
+}
+
 .margin {margin-bottom: 45px;}
+.body-text {
+  //-webkit-text-stroke: 1px black;
+  font-size: 30px;
+  color: #ffffff;
+}
 .bg-1 {
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
+    @extend .body-text;
+    // background-color: #1abc9c; /* Green */
 }
 .bg-2 {
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
+    @extend .body-text;
+    // background-color: #474e5d; /* Dark Blue */
 }
 .bg-3 {
-    background-color: #ffffff; /* White */
+    @extend .body-text;
+    // background-color: #ffffff; /* White */
     color: #555555;
 }
 .bg-4 {
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
+    @extend .body-text;
+    // background-color: #2f2f2f; /* Black Gray */
 }
 .spaced {
   letter-spacing: 5px;

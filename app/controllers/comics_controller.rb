@@ -4,7 +4,7 @@ class ComicsController < ApplicationController
   # GET /comics
   # GET /comics.json
   def index
-    @comics = Comic.all
+    @comic = Comic.order("created_at").last
   end
 
   # GET /comics/1
