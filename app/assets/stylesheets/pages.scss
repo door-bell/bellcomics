@@ -1,55 +1,57 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+p {font-size: 16px;}
 .gradient-body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
     background: linear-gradient(98deg, #00b93b, #00b5ff);
     background-size: 400% 400%;
-    -webkit-animation: AnimationName 5s ease infinite;
-    -moz-animation: AnimationName 5s ease infinite;
-    animation: AnimationName 5s ease infinite;
+    -webkit-animation: GradientBoy 4s ease infinite;
+    -moz-animation: GradientBoy 4s ease infinite;
+    animation: GradientBoy 4s ease infinite;
 }
-p {font-size: 16px;}
-
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes GradientBoy {
     0%{background-position:0% 20%}
     50%{background-position:100% 81%}
     100%{background-position:0% 20%}
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes GradientBoy {
     0%{background-position:0% 20%}
     50%{background-position:100% 81%}
     100%{background-position:0% 20%}
 }
-@keyframes AnimationName {
+@keyframes GradientBoy {
     0%{background-position:0% 20%}
     50%{background-position:100% 81%}
     100%{background-position:0% 20%}
 }
 
 .margin {margin-bottom: 45px;}
-.body-text {
+.body-text p {
   //-webkit-text-stroke: 1px black;
-  font-size: 30px;
+  font-size: 18px;
+  text-shadow: 2px 1px 8px black;
+}
+.link-white {
   color: #ffffff;
 }
 .bg-1 {
-    @extend .body-text;
+    //@extend .body-text;
     // background-color: #1abc9c; /* Green */
 }
 .bg-2 {
-    @extend .body-text;
+    // @extend .body-text;
     // background-color: #474e5d; /* Dark Blue */
 }
 .bg-3 {
-    @extend .body-text;
+    // @extend .body-text;
     // background-color: #ffffff; /* White */
-    color: #555555;
+    color: #ffffff;
 }
 .bg-4 {
-    @extend .body-text;
+    // @extend .body-text;
     // background-color: #2f2f2f; /* Black Gray */
 }
 .spaced {
@@ -59,6 +61,8 @@ p {font-size: 16px;}
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
