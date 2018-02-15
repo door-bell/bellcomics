@@ -1,0 +1,140 @@
+/* line 4, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+p {
+  font-size: 16px;
+}
+
+/* line 5, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.gradient-body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+  background: linear-gradient(98deg, #00b93b, #00b5ff);
+  background-size: 400% 400%;
+  -webkit-animation: GradientBoy 4s ease infinite;
+  animation: GradientBoy 4s ease infinite;
+}
+
+@-webkit-keyframes GradientBoy {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes GradientBoy {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* line 36, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.header-about {
+  font-family: palatino;
+  letter-spacing: 5px;
+}
+
+/* line 41, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.margin {
+  margin-bottom: 45px;
+}
+
+/* line 42, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.body-text p {
+  font-size: 18px;
+}
+
+/* line 46, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.link-white {
+  color: #ffffff;
+}
+
+/* line 49, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.spaced {
+  letter-spacing: 5px;
+}
+
+/* line 52, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* line 56, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.navbar {
+  padding: .2rem 1rem !important;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+/* line 63, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.navbar-nav li a {
+  font-family: palatino;
+}
+
+/* line 66, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+
+/* line 77, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.bg-3 {
+  color: #ffffff;
+}
+
+/* line 88, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+/* line 93, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+
+/* line 97, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+/* line 100, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.form-signin .form-control {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* line 107, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+/* line 110, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* line 115, C:/Users/Tim/Documents/Rails/Bella/app/assets/stylesheets/pages.scss */
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
