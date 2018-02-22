@@ -1,9 +1,13 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/* Imports/Fonts */
+@import url('https://fonts.googleapis.com/css?family=Bellefair|Poppins');
+
+/* About */
 p {font-size: 16px;}
 .gradient-body {
-    font: 20px Montserrat, sans-serif;
+    font: 20px 'Poppins', sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
     background: linear-gradient(270deg, #ff405f, #70e2e4);
@@ -35,7 +39,7 @@ p {font-size: 16px;}
 }
 
 .header-about {
-  font-family: palatino;
+  font-family: 'Bellefair', palatino;
   letter-spacing: 5px;
   //text-shadow: 2px 1px 8px black;
 }
@@ -59,20 +63,20 @@ p {font-size: 16px;}
     font-size: 12px;
 }
 .navbar-nav li a {
-    font-family: palatino;
+    font-family: 'Bellefair', palatino;
 }
 .navbar-nav  li a:hover {
-    color: #1abc9c !important;
+    color: #ff405f !important;
 }
 .link-white {
   color: #ffffff;
 }
 .btn-clear {
   background: rgba(0, 0, 0, 0);
-  font-family: palatino;
+  font-family: 'Bellefair', palatino;
 }
 
-
+/* Login form */
 .form-signin {
   max-width: 330px;
   padding: 15px;
