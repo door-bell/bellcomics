@@ -12,16 +12,18 @@
     </div>
 
     <div class="text-center main-comic">
-      <h2>@comic.title</h2>
-      <!--image_tag(@comic.image.url, :alt = @comic.alt) -->
+      <h2><%= @comic.title %></h2>
+      <%= image_tag(@comic.image.url, alt: @comic.alt) %>
     </div>
+    <div class="text-center buttons">
 
+    </div>
 
   </main>
 
 
 
-
+<hr />
   <footer class="footer">
     <div class="container text-center">
       <a href="/about" style="spaced">About me</a> • <a href="mailto:busterbrownsgirl@gmail.com">Contact Me</a>
