@@ -14,9 +14,6 @@ class ComicsController < ApplicationController
   # GET /comics/1.json
   def show
     @comic = Comic.find(params[:id])
-    unless @comic != nil
-      redirect_to "/"
-    end
   end
 
   # GET /comics/new
