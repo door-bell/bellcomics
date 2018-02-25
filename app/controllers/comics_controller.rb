@@ -5,12 +5,18 @@ class ComicsController < ApplicationController
   # GET /comics.json
   def index
     @comic = Comic.order("created_at").last
+    unless @comic != nil
+      redirect_to "/about"
+    end
   end
 
   # GET /comics/1
   # GET /comics/1.json
   def show
     @comic = Comic.find(params[:id])
+    unless @comic != nil
+      redirect_to "/"
+    end
   end
 
   # GET /comics/new

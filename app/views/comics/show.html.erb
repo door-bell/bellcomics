@@ -19,7 +19,7 @@
     </div>
     <div class="text-center">
       <% if current_user && current_user.admin %>
-      <%= link_to 'Edit', edit_comic_path(@comic) %> | <%= link_to 'Delete', comic_path(@comic), method: :delete %>
+        <%= link_to 'Edit', edit_comic_path(@comic) %> | <%= link_to 'Delete', comic_path(@comic), method: :delete %>
       <% end %>
     </div>
   </main>
