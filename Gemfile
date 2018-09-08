@@ -65,4 +65,4 @@ gem 'clearance'
 gem 'recaptcha', :require => 'recaptcha/rails'
 gem 'rails_admin'
 # comics
-gem "paperclip", "~> 5.0.0"
+gem "paperclip", "~> 5.2.0"
