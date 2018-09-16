@@ -2,5 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #comic-image {
-  max-height: 50%;
+  @media (min-width: 767px) {
+      height: 75%;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: 50%;
+  }
 }
