@@ -25,4 +25,6 @@ to sign up and get an email each time a comic was posted.
 3. Add "newsletter" for basic users.
 
 4. Figure out mailing system.
+
+5. Finish deploying.
 `
