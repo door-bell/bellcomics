@@ -9,3 +9,22 @@
     height: 50%;
   }
 }
+
+.container > .button_to {
+  display: inline;
+}
+.image-upload {
+  margin: 2em 2em;
+}
+.btn-update {
+  @media (min-width: 767px) {
+    width: 25%;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 75%;
+  }
+  height: 3em;
+}
+.actions {
+  text-align: center;
+}

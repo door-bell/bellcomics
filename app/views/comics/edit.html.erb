@@ -1,7 +1,11 @@
-<h1>Editing Comic</h1>
+<div class="container" style="width: 60%">
+  <h1>Editing Comic</h1>
 
-<%= render 'form', comic: @comic %>
+  <%= render 'form', comic: @comic %>
 
-<%= link_to 'Show', @comic %> |
-<%= link_to 'Delete', comic_path(@comic), method: :delete %> |
-<%= link_to 'Back', comics_path %>
+  <div class="container">
+    <%= button_to 'Show', @comic, class: "btn btn-primary" %>
+    <%= button_to 'Delete', comic_path(@comic), method: :delete, class: "btn btn-danger" %>
+    <%= button_to 'Back', comics_path,  class: "btn btn-secondary" %>
+  </div>
+</div>

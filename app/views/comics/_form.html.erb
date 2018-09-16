@@ -11,21 +11,21 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="text-field">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :comic_title %>
+    <%= form.text_field :title, id: :comic_title, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="text-field">
     <%= form.label :alt %>
-    <%= form.text_field :alt, id: :comic_alt %>
+    <%= form.text_field :alt, id: :comic_alt, class: 'form-control'%>
   </div>
 
   <div class="field">
-    <%= form.file_field :image %>
+    <%= form.file_field :image , class: "image-upload"%>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-success btn-update' %>
   </div>
 <% end %>
