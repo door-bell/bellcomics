@@ -1,5 +1,6 @@
 <div class="container">
   <h1>Manage Comics</h1>
+  <div class="new-link"><%= link_to 'Post a new Comic', new_comic_path() %></div>
   <% @comics.in_groups_of(4, false).each do |group| %>
     <div class="manage-row row">
       <% group.each do |comic| %>

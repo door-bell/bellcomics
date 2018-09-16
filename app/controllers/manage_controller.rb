@@ -1,5 +1,5 @@
 class ManageController < ApplicationController
   def index
-    @comics = Comic.take(3)
+    @comics = Comic.all()
   end
 end
