@@ -7,7 +7,7 @@ Live demo coming soon to:
 
 http://bellcomics.timbeck.me
 
-#Preview
+# Preview
 
 Checkout the image gallery of the site at https://imgur.com/a/DKw8UIY
 
