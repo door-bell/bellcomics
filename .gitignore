@@ -23,5 +23,4 @@
 .byebug_history
 
 # Other
-/config/initializers/recaptcha.rb
 /public/system/comics
