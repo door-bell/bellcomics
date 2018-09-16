@@ -24,6 +24,6 @@ production:
   database: example_production
   adapter: postgresql
   host: localhost
-  password:
+  username: user
   encoding: utf8
   pool: 15
