@@ -4,7 +4,7 @@ class CreateComics < ActiveRecord::Migration[5.1]
       t.string :title
       t.string :alt
 
-      t.timestamps
+      t.timestamps :created_at
     end
   end
 
