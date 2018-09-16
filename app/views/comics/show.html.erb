@@ -17,10 +17,19 @@
       <h2><%= @comic.title %></h2>
       <%= image_tag(@comic.image.url, alt: @comic.alt, id: "comic-image") %>
     </div>
-    <div class="text-center">
-      <% if current_user && current_user.admin %>
-        <%= link_to 'Edit', edit_comic_path(@comic) %> | <%= link_to 'Delete', comic_path(@comic), method: :delete %>
+    <div class="text-center buttons">
+      <% if @previous %>
+        <%= link_to "<- Previous", comic_url(@previous)%>
       <% end %>
+      <% if @next %>
+        | <%= link_to "Next ->", comic_url(@next) %>
+      <% end %>
+      <div class="admin-comic-controls">
+        <% if current_user && current_user.admin %>
+          <br />
+          <%= link_to 'Edit', edit_comic_path(@comic) %> | <%= link_to 'Delete', comic_path(@comic), method: :delete %>
+        <% end %>
+    </div>
     </div>
   </main>
 

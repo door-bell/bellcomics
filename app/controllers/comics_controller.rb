@@ -6,7 +6,7 @@ class ComicsController < ApplicationController
   def index
     @comic = Comic.order("created_at").last
     unless @comic != nil
-      redirect_to "/about"
+      redirect_to "/sign_in"
     end
   end
 
@@ -14,6 +14,8 @@ class ComicsController < ApplicationController
   # GET /comics/1.json
   def show
     @comic = Comic.find(params[:id])
+    @previous = Comic.where("id < ?", params[:id]).order(:id).last
+    @next = Comic.where("id > ?", params[:id]).order(:id).first
   end
 
   # GET /comics/new
