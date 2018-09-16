@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Manage Comics</h1>
+  <div class="new-link"><%= link_to 'Post a new Comic', new_comic_path() %></div>
+  <% @comics.in_groups_of(4, false).each do |group| %>
+    <div class="manage-row row">
+      <% group.each do |comic| %>
+        <div class="comic-box">
+          <h1><%= comic.id %>: <%= comic.title %></h1>
+          <%= image_tag(comic.image.url, alt: comic.alt, class: "list-image") %>
+          <p class="alt-text"><%= comic.alt %></p>
+          <hr />
+          <%= link_to 'Edit', edit_comic_path(comic) %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

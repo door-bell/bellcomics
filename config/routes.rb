@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'manage/index'
   resources :comics
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
   # resource :session, controller: "clearance/sessions", only: [:create]
@@ -19,5 +20,6 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => "/admin", as: "rails_admin"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root "comics#index"
+  get "/manage" => "manage#index"
   get "/about" => "pages#about"
 end

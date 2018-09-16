@@ -15,7 +15,7 @@
 
     <div class="text-center main-comic">
       <h2><%= @comic.title %></h2>
-      <%= image_tag(@comic.image.url, alt: @comic.alt) %>
+      <%= image_tag(@comic.image.url, alt: @comic.alt, id: "comic-image") %>
     </div>
     <div class="text-center">
       <% if current_user && current_user.admin %>

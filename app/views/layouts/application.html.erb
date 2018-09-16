@@ -34,6 +34,7 @@
         <%= link_to 'Sign out', sign_out_path, method: :delete %>
         <% if current_user.admin %>
            - <%= link_to 'Admin', '/admin' %>
+           - <%= link_to 'Manage Comics', '/manage' %>
         <% end %>
       <% else %>
         <%= link_to 'Sign in', sign_in_path %>
