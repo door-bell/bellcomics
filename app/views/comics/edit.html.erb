@@ -3,4 +3,5 @@
 <%= render 'form', comic: @comic %>
 
 <%= link_to 'Show', @comic %> |
+<%= link_to 'Delete', comic_path(@comic), method: :delete %> |
 <%= link_to 'Back', comics_path %>
