@@ -1,7 +1,7 @@
 
 # Demo
 
-Live demo coming soon to:
+Live demo (and work in progress) is live at:
 
 http://bellcomics.timbeck.me
 
@@ -26,5 +26,5 @@ to sign up and get an email each time a comic was posted.
 
 4. Figure out mailing system.
 
-5. Finish deploying.
+5. Set up AWS to host images from Paperclip because Heroku doesn't like to hold my pictures.
 `
