@@ -1,9 +1,12 @@
+![Build Status](https://travis-ci.org/door-bell/bellcomics.svg?branch=master)
 
 # Demo
 
 Live demo (and work in progress) is live at:
 
 http://bellcomics.timbeck.me
+
+It's running on a free heroku host, so if it takes a long time to load, try again.
 
 # Preview
 
